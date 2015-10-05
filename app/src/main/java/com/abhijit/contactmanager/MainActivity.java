@@ -66,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), "Your contact has been created!", Toast.LENGTH_SHORT).show();
-                //Contacts.add(new Contact(name, phone, email, address, ));
+
                 //Contacts.add(new Contact(0, nametxt.getText().toString(), phonetxt.getText().toString(), emailtxt.getText().toString(), addresstxt.getText().toString(), imageUri));
                 Contact contact = new Contact(dbHandler.getContactsCount(), String.valueOf(nametxt.getText()), String.valueOf(phonetxt.getText()), String.valueOf(emailtxt.getText()), String.valueOf(addresstxt.getText()), imageUri);
                 if(!contactExists(contact)){
